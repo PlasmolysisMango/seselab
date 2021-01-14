@@ -59,7 +59,7 @@ Accept-Language: zh-CN,zh;q=0.9
                         pixdata[x, y] = (0, 0, 0)
                     if pixdata[x, y][2] < 240:
                         pixdata[x, y] = (0, 0, 0)
-            code = pytesseract.image_to_string(img)
+            code = pytesseract.image_to_string(img, lang = 'eng')
         elif mode == 'baidu_ocr':
             code = baidu_ocr.read(img_b64)
         elif mode == 'manual': 

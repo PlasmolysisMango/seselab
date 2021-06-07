@@ -143,5 +143,5 @@ baidu_ocr = BaiduOCR(APP_KEY, SECRET_KEY) # 实例化
 
 if __name__ == '__main__':
     tongji_login = TongjiLogin()
-    tongji_login.mode = 'tesseract'
+    tongji_login.mode = 'baidu_ocr'
     tongji_login.switch_account(0)

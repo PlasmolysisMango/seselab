@@ -77,7 +77,7 @@ Accept-Language: zh-CN,zh;q=0.9
         r3 = requests.get(url3)
         jes_urn_cookies = res2cookie(r3) # 获取JSESSIONID
         url4 = 'https://ids.tongji.edu.cn:8443/nidp/app/login?sid=0&sid=0'
-        data = getDict('option=credential&Ecom_User_ID=2030563&Ecom_Password=Htt05j2666&Ecom_code=bufw')
+        data = getDict('option=credential&Ecom_User_ID=你的ID&Ecom_Password=你的密码&Ecom_code=bufw')
         data['Ecom_User_ID'] = uid
         data['Ecom_Password'] = psw
         self.headers['Referer'] = url3
